@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="navbar.css">
+    <script type="text/montage-serialization">
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "navbar"}
+            }
+        },
+        "homeButton": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "homeButton"}
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "listener": {"@": "owner"}
+                }
+            ]
+        },
+        "addButton": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "addButton"}
+            },
+            "listeners": [
+                {
+                    "type": "action",
+                    "listener": {"@": "owner"}
+                }
+            ]
+        },
+        "title": {
+            "prototype": "digit/ui/title.reel",
+            "properties": {
+                "element": {"#": "title"}
+            },
+            "bindings": {
+                "value": {"<-": "@owner.title"}   
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <nav data-montage-id="navbar" class="Navbar">
+        <button data-montage-id="homeButton" class="item">∆</button>
+        <div data-montage-id="title" class="item"></div>
+        <button data-montage-id="addButton" class="item">+</button>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,47 @@
+.Navbar {
+    height: 88px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    background: rgb(255, 132, 0), rgb(255, 100, 0);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 132, 0)), to(rgb(255, 100, 0)));
+    background-image: -webkit-linear-gradient(top, rgb(255, 132, 0), rgb(255, 100, 0));
+    background-image: -moz-linear-gradient(top, rgb(255, 132, 0), rgb(255, 100, 0));
+    background-image: -ms-linear-gradient(top, rgb(255, 132, 0), rgb(255, 100, 0));
+    background-image: -o-linear-gradient(top, rgb(255, 132, 0), rgb(255, 100, 0));
+    background-image: linear-gradient(top, rgb(255, 132, 0), rgb(255, 100, 0));
+
+    display: -webkit-flex;
+}
+
+.Navbar .item {
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-width: 66px;
+    text-align: center;
+}
+
+.Navbar .digit-Title {
+    flex-grow: 1;
+    align-items: center;
+    color: white;
+    text-shadow: none;
+    font-family: Raleway, "Helvetica Neue","Helvetica";
+}
+
+.Navbar .digit-Button {
+    background: none;
+    border: none;
+    box-shadow: none;
+    text-shadow: none;
+    color: white;
+    font-size: 42px;
+}
+.Navbar .digit-Button.montage--active {
+    opacity: 0.5;
+    background: none;
+    box-shadow: none;
+}

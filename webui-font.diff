@@ -1,0 +1,48 @@
+From 7b6967a495a3b38b9b2e269634bbd9bdd69a5e24 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Jean-Romain=20Pre=CC=81vost?= <jr@ailleurs.me>
+Date: Sun, 15 Dec 2013 09:58:10 -0800
+Subject: [PATCH] Add font to the assets for the web UI
+
+---
+ VLC for iOS.xcodeproj/project.pbxproj | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/VLC for iOS.xcodeproj/project.pbxproj b/VLC for iOS.xcodeproj/project.pbxproj
+index d0c3467..658b0c3 100644
+--- a/VLC for iOS.xcodeproj/project.pbxproj	
++++ b/VLC for iOS.xcodeproj/project.pbxproj	
+@@ -35,6 +35,7 @@
+ 		2915544117490B9C00B86CAD /* WebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 2915543A17490B9C00B86CAD /* WebSocket.m */; };
+ 		2915544317490D4A00B86CAD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2915544217490D4A00B86CAD /* Security.framework */; };
+ 		293DF2F417494F8200BB880F /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D05ADEA174945CE0087550C /* DropboxSDK.framework */; };
++		2BA88AB3185C511D0014476A /* Raleway.woff in Resources */ = {isa = PBXBuildFile; fileRef = 2BA88AB2185C511D0014476A /* Raleway.woff */; };
+ 		7AC8629D1765DC560011611A /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 7AC8629B1765DC560011611A /* style.css */; };
+ 		7AC862A61765E9510011611A /* jquery-1.10.1.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 7AC8629E1765E90C0011611A /* jquery-1.10.1.min.js */; };
+ 		7AC862A71765E9510011611A /* jquery.fileupload.js in Resources */ = {isa = PBXBuildFile; fileRef = 7AC8629F1765E90C0011611A /* jquery.fileupload.js */; };
+@@ -359,6 +360,7 @@
+ 		2915543917490B9C00B86CAD /* WebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebSocket.h; path = ImportedSources/CocoaHTTPServer/Core/WebSocket.h; sourceTree = SOURCE_ROOT; };
+ 		2915543A17490B9C00B86CAD /* WebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebSocket.m; path = ImportedSources/CocoaHTTPServer/Core/WebSocket.m; sourceTree = SOURCE_ROOT; };
+ 		2915544217490D4A00B86CAD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
++		2BA88AB2185C511D0014476A /* Raleway.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = Raleway.woff; sourceTree = "<group>"; };
+ 		7AC8629B1765DC560011611A /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+ 		7AC8629E1765E90C0011611A /* jquery-1.10.1.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-1.10.1.min.js"; sourceTree = "<group>"; };
+ 		7AC8629F1765E90C0011611A /* jquery.fileupload.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.fileupload.js; sourceTree = "<group>"; };
+@@ -952,6 +954,7 @@
+ 			children = (
+ 				7AC8629E1765E90C0011611A /* jquery-1.10.1.min.js */,
+ 				7AC8629F1765E90C0011611A /* jquery.fileupload.js */,
++				2BA88AB2185C511D0014476A /* Raleway.woff */,
+ 				7AC862A01765E90C0011611A /* jquery.iframe-transport.js */,
+ 				7AC862A11765E90C0011611A /* jquery.ui.widget.js */,
+ 				7AC8629B1765DC560011611A /* style.css */,
+@@ -1939,6 +1942,7 @@
+ 				7D47D6FB1760CD8700E86BAD /* videoEffectsIcon.png in Resources */,
+ 				7D47D6FC1760CD8700E86BAD /* videoEffectsIcon@2x.png in Resources */,
+ 				7D47D6FD1760CD8700E86BAD /* seekbarBg@2x.png in Resources */,
++				2BA88AB3185C511D0014476A /* Raleway.woff in Resources */,
+ 				7D47D6FE1760CD8700E86BAD /* slidermaximumTrack.png in Resources */,
+ 				7D47D6FF1760CD8700E86BAD /* slidermaximumTrack@2x.png in Resources */,
+ 				7D47D7001760CD8700E86BAD /* slidermaxValue.png in Resources */,
+-- 
+1.7.11.1
+

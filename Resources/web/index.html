@@ -1,41 +1,25 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>VLC for iOS file uploader</title>
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="jquery-1.10.1.min.js"></script>
-    <script type="text/javascript" src="jquery.ui.widget.js"></script>
-    <script type="text/javascript" src="jquery.iframe-transport.js"></script>
-    <script type="text/javascript" src="jquery.fileupload.js"></script>
-    <script type="text/javascript" src="main.js"></script>
-  </head>
-  <body>
-    <div id="header">
-      <div class="nav">
-        <a class="btn linkBtn" href="http://www.videolan.org" target="_blank"><div class="icon"></div></a>
-        <div class="btn uploadBtn">
-          <input id="fileupload" type="file" name="files[]" data-url="upload.json" multiple>
-          Upload files
-        </div>
-      </div>
-    </div>
-    <div class="main">
-      <div class="uploads">
-        <ul></ul>
-      </div>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>VLC iOS Web Uploader</title>
 
-      <div class="message">
-        <h1>Drop files</h1>
-        <p>
-          Drop files in the window to add them to your iOS device. <br>
-          Or click on the "Upload file" button to use the file dialog window.
-        </p>
-      </div>
+    <link rel="stylesheet" href="assets/style/style.css" />
 
-      <div id="footer">
-        <p>VLC for iOS is free, open-source software published by <a href="http://www.videolan.org" target="_blank">VideoLAN</a>. <br />Modification and redistribution is subject to both the <a href="http://opensource.org/licenses/GPL-2.0" target="_blank">GPLv2 (or later)</a> and the <a href="http://opensource.org/licenses/MPL-2.0" target="_blank">MPLv2</a> as well as further rights reserved by the VideoLAN association.<br />You can find the sources to this application <a href="http://git.videolan.org/?p=vlc-ports/ios.git;a=summary" target="_blank">online</a> and more information about licensing in the About dialog included within the app.</p>
-      </div>
-    </div>
-  </body>
+    <script src="node_modules/montage/montage.js" async></script>
+    <script type="text/montage-serialization">
+    {
+        "owner": {
+            "prototype": "montage/ui/loader.reel",
+            "properties": {
+                "mainModule": "ui/main.reel",
+                "mainName": "Main"
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <span class="loading"></span>
+</body>
 </html>

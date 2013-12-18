@@ -1,0 +1,67 @@
+.Welcome {
+    max-width: 50em;
+    padding: 1em;
+    margin: 0 auto;
+    -webkit-perspective: 2000px;
+    -moz-perspective: 2000px;
+    -ms-perspective: 2000px;
+    -o-perspective: 2000px;
+    perspective: 2000px;
+}
+
+.Welcome h1 {
+    margin: 1em 0;
+    text-align: center;
+}
+
+.Welcome p {
+    margin-top: 0;
+}
+
+.Welcome h1 img {
+    height: 5em;
+    horizontal-align: center;
+}
+
+.Welcome kbd {
+    background: hsl(0,0%,92%);
+}
+
+/* The following rules really should be part of hello-world.css; we've included them here to streamline the quick start tutorial.*/
+
+.Welcome .HelloWorld {
+    text-align: center;
+    margin: 0.2em 0;
+    padding: 0.5em;
+    border: 4px dashed hsl(0,0%,80%);
+    border-radius: 8px;
+    font-size: 4em;
+    line-height: 1em;
+    font-weight: bold;
+    text-shadow: 0 2px 2px hsl(0,0%,80%);
+    background-color: white;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform .4s ease-in-out;
+    -moz-transition: -moz-transform .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: transform .4s ease-in-out;
+}
+
+.Welcome .HelloWorld.flip {
+    background-color: rgb(245, 245, 245);
+    -webkit-transform: rotateY(180deg) rotateZ(180deg) rotateX(180deg);
+    -moz-transform: rotateY(180deg) rotateZ(180deg) rotateX(180deg);
+    -ms-transform: rotateY(180deg) rotateZ(180deg) rotateX(180deg);
+    -o-transform: rotateY(180deg) rotateZ(180deg) rotateX(180deg);
+    transform: rotateY(180deg) rotateZ(180deg) rotateX(180deg);
+}

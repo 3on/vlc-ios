@@ -1,4 +1,6 @@
 .UploadButton {
+    position: relative;
+    overflow: hidden;
 }
 
 /* hack to get a custom design upload button */

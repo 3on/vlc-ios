@@ -32,7 +32,7 @@
     font-family: Raleway, "Helvetica Neue","Helvetica";
 }
 
-.Navbar .digit-Button {
+.Navbar .digit-Button, .Navbar .UploadButton .file-input-label {
     background: none;
     border: none;
     box-shadow: none;

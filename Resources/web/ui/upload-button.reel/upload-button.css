@@ -1,0 +1,17 @@
+.UploadButton {
+}
+
+/* hack to get a custom design upload button */
+.UploadButton .file-input {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 1000px !important;
+    cursor: pointer;
+}

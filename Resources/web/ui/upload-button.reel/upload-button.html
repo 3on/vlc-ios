@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="upload-button.css">
+    <script type="text/montage-serialization">
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "uploadButton"}
+            }
+        },
+
+        "buttonLabel": {
+            "prototype": "digit/ui/text.reel",
+            "properties": {
+                "element": {"#": "buttonLabel"}
+            },
+            "bindings": {
+                "value":  {"<-": "@owner.label"}
+            }
+        }
+
+    }
+    </script>
+</head>
+<body>
+    <div data-montage-id="uploadButton" class="UploadButton digit-Button">
+        <input type="file" name="files[]" multiple class="file-input">
+        <span data-montage-id="buttonLabel" class="file-input-label"></span>
+    </div>
+</body>
+</html>

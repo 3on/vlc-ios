@@ -27,7 +27,6 @@ exports.Navbar = Component.specialize(/** @lends Navbar# */ {
 
     handlehomeButtonAction: {
         value: function (evt) {
-            this.dispatchEventNamed("addFile", true, true);
         }
     }
 });

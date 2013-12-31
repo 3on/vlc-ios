@@ -13,5 +13,16 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         value: function Main() {
             this.super();
         }
+    },
+
+    files : {
+        value: [
+            {
+                name: "toto.mkv"
+            },
+            {
+                name: "film de boules.mkv"
+            },
+        ]
     }
 });

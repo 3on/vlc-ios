@@ -19,6 +19,28 @@
                     "element": {"#": "navbar"},
                     "title": "WiFi Upload"
                 }
+            },
+            "fileController": {
+                "prototype": "montage/core/range-controller",
+                "bindings": {
+                    "content": {"<-": "@owner.files"}
+                }
+            },
+            "filesRepetition": {
+                "prototype": "montage/ui/repetition.reel",
+                "properties": {
+                    "element": {"#": "filesRepetition"},
+                    "contentController": {"@": "fileController"}
+                }
+            },
+            "file": {
+                "prototype": "ui/file.reel",
+                "properties": {
+                    "element": {"#": "file"}
+                },
+                "bindings": {
+                    "info": {"<-": "@filesRepetition.objectAtCurrentIteration"}
+                }
             }
         }
     </script>
@@ -28,7 +50,13 @@
 
         <section data-montage-id="navbar"></section>
 
-        <section data-montage-id="files"></section>
+        <section class="files">
+            <ul data-montage-id="filesRepetition">
+                <li>
+                    <div data-montage-id="file"></div>
+                </li>
+            </ul>
+        </section>
 
         <section class="liscence">
             <p>

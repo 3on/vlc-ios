@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="file.css">
+    <script type="text/montage-serialization">
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "file"}
+            }
+        },
+        "titleText": {
+            "prototype": "digit/ui/text.reel",
+                "properties": {
+                    "element": {"#": "titleText"}
+                },
+            "bindings": {
+                "value":  {"<-": "@owner.info.name"}
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <div data-montage-id="file" class="File">
+        <section class="thumbnail">
+            <img src="" />
+        </section>
+
+        <section class="informations">
+            <h2 data-montage-id="titleText"></h2>
+            <progress />
+            <span data-montage-id="statusText" ></span>
+        </section>
+
+        <section>
+            <button>x</button>
+        </section>
+    </div>
+</body>
+</html>
